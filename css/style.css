@@ -195,14 +195,14 @@ slider {
     width: 100%;
     height: 100%;
     background: #34C6D3;
-    animation: slide 24s infinite;
+    animation: slide 12s infinite;
     overflow: hidden;
     
    }
    
    slide:nth-child(1){
     left: 0%;
-    animation-delay: -2s;
+    animation-delay: -1s;
     background-image: url("../img/1.jpg");
     background-size: cover;
     background-position: center;
@@ -210,7 +210,7 @@ slider {
    
    slide:nth-child(2){
     left: 100%;
-    animation-delay: 4s;
+    animation-delay: 2s;
     background-image: url("../img/2.jpg");
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@ slider {
    
    slide:nth-child(3){
     left: 100%;
-    animation-delay: 10s;
+    animation-delay: 5s;
     background-image: url("../img/3.jpg");
     background-size: cover;
     background-position: center;
@@ -226,7 +226,7 @@ slider {
    
    slide:nth-child(4){
     left: 100%;
-    animation-delay:16s;
+    animation-delay:8s;
     background-image: url('../img/4.jpg');
     background-size: cover;
     background-position: center;
@@ -287,10 +287,12 @@ slider {
    }
   slide svg path {
     cursor: pointer;
-    /* -webkit-animation: blob 2s infinite forwards;
-            animation: blob 2s infinite forwards; */
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
+  }
+  .move {
+    -webkit-animation: blob 2s infinite forwards;
+    animation: blob 2s infinite forwards;
   }
   slide svg path:hover {
     fill: #fafafa;
