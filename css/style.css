@@ -8,77 +8,174 @@
   #FFF : texte avec un background noir 
   #000 : il est toujours présent 
 ===============================================================*/
- * {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   text-decoration: none;
-   
- }
- 
- 
-/* navbar */
- .header {
-   width: 100%;
-   height: 80px;
-   display: block;
-   background-color: black;
- }
- .inner_header {
-   width: 90%;
-   height: 100%;
-   display: block;
-   margin: 0 auto;
-   
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
   
- }
- .logo_container {
-   height: 100%;
-   display: table;
-   float: left;
- }
- .logo_container h1 {
-   color: white;
-   height: 100%;
-   display: table-cell;
-   vertical-align: middle;
-   font-family: 'Seymour One', sans-serif;
-   font-size: 32px;
- }
-   .logo_container h1 a {
-     color: white;
-   }
+}
 
- .logo_container h1 span {
-   font-weight: bolder;
-   color: #34C6D3;
- }
- .navigation {
-   float: right;
-   height: 100%;
- }
- .navigation a {
-   height: 100%;
-   display: table;
-   float: left;
-   padding: 0px 20px;
- }
- .navigation a li {
-   display: table-cell;
-   vertical-align: middle;
-   height: 100%;
-   color: white;
-   font-family: 'Montserrat';
-   font-size: 12px;
-   text-transform: uppercase;
-   font-weight: bold;
-   cursor: pointer;
- }
- .navigation a li:hover {
-   color: #34C6D3;
- }
 
+/* navbar */
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: black;
+}
+.inner_header {
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  
  
+}
+.logo_container {
+  height: 100%;
+  display: table;
+  float: left;
+}
+.logo_container h1 {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 32px;
+}
+  .logo_container h1 a {
+    color: white;
+  }
+
+.logo_container h1 span {
+  font-weight: bolder;
+  color: #34C6D3;
+}
+.navigation {
+  float: right;
+  height: 100%;
+  
+}
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navigation a li:hover {
+  color: #34C6D3;
+}
+.menu {
+  padding: 20px 10px ;
+  float: right;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  display: none;
+}
+@media (max-width: 1400px) {
+
+  .slider{
+    z-index: -1;
+  }
+  .toggle {
+    display: block;
+    z-index: 1;
+  }
+  .menu {
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+ }
+  .navigation{
+      border-top: 0.1px solid gray;
+      margin-right: -14%;
+      float: right;
+      width: 300px;
+      height: auto;
+      margin-top: 79px;
+      padding: 0;
+      background-color: black;
+      text-align: center;
+      display:none;
+  }
+  .navigation  a {
+    display: block;
+    padding: 20px;
+  }
+ 
+  .navigation a li {
+    padding: 2Opx;
+    display: block;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .active{
+      display: grid;
+  }
+}
+
+@media (max-width: 620px) {
+.toggle {
+    display: block;
+}
+.menu {
+display: block;
+position: relative;
+}
+.navigation{
+  margin-right: -17%;
+  float: right;
+  width: 167px;
+  height: auto;
+  margin-top: 79px;
+  padding: 0;
+  background-color: black;
+  text-align: center;
+  display:none;
+}
+.navigation  a {
+display: block;
+padding: 20px;
+}
+
+.navigation a li {
+padding: 2Opx;
+display: block;
+height: 100%;
+color: white;
+font-family: 'Montserrat';
+font-size: 16px;
+text-transform: uppercase;
+font-weight: bold;
+cursor: pointer;
+}
+.active{
+  display: grid;
+}
+}
+
+
 /* .slider */
 slider {
     display: block;
@@ -92,7 +189,7 @@ slider {
    
    slider > * {
     position: absolute;
-    display: block;
+    display: grid;
     width: 100%;
     height: 100%;
     background: #34C6D3;
@@ -161,6 +258,9 @@ slider {
     100% { left: 100%; width: 0%; }
    } 
    /* button */
+   slide svg {
+
+   }
    slide svg { 
     max-width: 430px;
     -webkit-transform: translateY(-50%) translateX(-50%);
@@ -171,12 +271,12 @@ slider {
     font-family: 'Roboto Condensed' ;
     font-size: 70px;
     display: inline-block;
-    font-weight: bold;
-    width: 100%; 
+    font-weight: bold; 
     color: white;
     position: absolute;
     top: 78%;
     left: 15%;
+    margin-left:20px;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 80%;
@@ -185,8 +285,8 @@ slider {
    }
   slide svg path {
     cursor: pointer;
-    -webkit-animation: blob 2s infinite forwards;
-            animation: blob 2s infinite forwards;
+    /* -webkit-animation: blob 2s infinite forwards;
+            animation: blob 2s infinite forwards; */
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
   }
