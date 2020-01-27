@@ -88,9 +88,9 @@
   display: none;
 }
 @media (max-width: 1400px) {
-
-  .slider{
+  slider{
     z-index: -1;
+  
   }
   .toggle {
     display: block;
@@ -135,8 +135,10 @@
   }
 }
 
+                                                                                           
 @media (max-width: 620px) {
-.toggle {
+
+  .toggle {
     display: block;
 }
 .menu {
@@ -276,7 +278,7 @@ slider {
     position: absolute;
     top: 78%;
     left: 15%;
-    margin-left:20px;
+    margin-left:10vh;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 80%;
