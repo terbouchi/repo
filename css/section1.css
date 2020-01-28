@@ -1,23 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Condensed", sans-serif;
-    box-sizing: border-box;
-}
 
-.services-section{
+
+.services-section {
 background: url(../img/azz.jpg);
 background-size: cover;
 padding: 60px 0;
+display: block;
+margin-top: 85vh;
 }
-.inner-width{
+.inner-width {
 width: 100%;
 max-width: 1200px;
 margin: auto;
 padding: 0 20px;
 overflow: hidden;
 }
-.inner-width h1{
+.inner-width h1 {
     display: block;
     text-align: center;
     color: white;
@@ -33,29 +30,44 @@ overflow: hidden;
     margin: 40px auto;
     opacity: 0.3;
 }
-.services-container{
+.services-container {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .services-container p {
-   text-align: center;
+    text-align: center;
     box-shadow: white;
     border: 2px solid #34C6D3;
     padding:76px 38px;
-
+    background-color: rgba(0,0,0, 0.4);
+    -webkit-box-shadow: 0px 15px 175px -12px rgba(52,198,211,0.67);
+    -moz-box-shadow: 0px 15px 175px -12px rgba(52,198,211,0.67);
+    box-shadow: 0px 15px 175px -12px rgba(52,198,211,0.67);
+    transition-duration: 1s;
 }
-.service-box{
-
-max-width: 33.33%;
-padding: 10px;
-text-align: center;
-color: #ddd; 
-cursor: pointer;
+.services-container p:hover {
+    font-size: 20px;
+    -webkit-box-shadow: 0px 3px 44px 36px rgba(52,198,211,0.56);
+    -moz-box-shadow: 0px 3px 44px 36px rgba(52,198,211,0.56);
+    box-shadow: 0px 3px 44px 36px rgba(52,198,211,0.56);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1.1);
+}
+.service-box {
+    margin-left: 90px;
+    margin-right: 90px;
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd; 
+    cursor: pointer;
+    box-shadow:  ;
 }
 
-.service-icon{
+.service-icon {
 display: inline-block;
 width: 70px;
 height: 70px;
@@ -66,7 +78,7 @@ margin-bottom: 30px;
 margin-top: 70px;
 transition: 0.3s linear;
 }
-.service-icon i{
+.service-icon i {
     line-height: 70px;
     transform: rotate(-45deg);
     font-size: 26px;
@@ -75,27 +87,30 @@ transition: 0.3s linear;
     background: #34C6D3;
     color: #ddd;
 }
-.service-title{
+.service-title {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.service-desc{
+.service-desc {
 font-size: 14px;
+font-family: "Roboto Condensed", sans-serif;
+font-weight: bold;
 }
+
 @media screen and (max-width:960px) {
-    .service-box{
+    .service-box {
         max-width:45%;
     }
 }
-@media screen and(max-width:480px){
-    .service-box{
+@media screen and(max-width:480px) {
+    .service-box {
         max-width: 50%;
     }
 }
 @media screen and (max-width:480px){
-    .service-box{
+    .service-box {
         max-width: width 100%;
     }
 }
