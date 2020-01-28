@@ -1,0 +1,49 @@
+#serv{
+    
+
+}
+footer {
+
+    background-color: #000;
+}
+
+
+p {
+    color: cornsilk;
+}
+
+i {
+    color: grey;
+    font-size: 3rem;
+}
+
+textarea {
+    height: 16rem !important;
+}
+
+.btntop {
+    float: right;
+}
+
+.mt-2 {
+
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+
+
+}
+
+
+}
+
+.header_navbar--menu {
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    color: white;
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 86%);
+}
