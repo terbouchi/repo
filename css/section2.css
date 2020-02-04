@@ -126,7 +126,7 @@
 }
 .button2 {
   display: grid;
-  margin: 20% 0 0 -42%;
+  margin: 16% 0 0 -42%;
 }
 .button2 .glow-on-hover {
   font-weight: bold;
