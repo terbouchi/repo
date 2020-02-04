@@ -1,4 +1,5 @@
 #real {
+    
     height: 100vh;
     width: 100%;
     
@@ -20,6 +21,9 @@
     display: block;
     
     
+}
+.slideshow{
+    overflow: hidden;
 }
 
 .m {
