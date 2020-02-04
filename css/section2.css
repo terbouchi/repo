@@ -1,31 +1,32 @@
 
 .paragraph-section {
-    position: absolute;
+    display: grid;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 120vh;
     background-image: url(../img/EEE.jpg);
     background-size: cover;
+    
 }
 .paragraph {
-    position: relative;
-    display: block;
-    width: 760px;
+    
+    display: grid;
+    width: 100%;
     left: 4em;
     top: 18em;
 }
 
 .paragraph-section .title {
-    display: block;
-    position: relative;
-    font-size: 48px; 
-    color: white;
-    font-weight: bold;
-    margin-top: -25%;
-    margin-bottom: 1em;
+  display: TABLE-COLUMN-GROUP;
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  margin-top: 7%;
+  margin-left: 6%;
+  margin-bottom: 1em;
+  
 }
 .paragraph-section  h1 span {
-    position: relative;
     top: 20px;
     display: inline-block;
     -webkit-animation: bouncee 0.3s ease infinite alternate;
@@ -96,8 +97,52 @@
   
 .paragraph-section p {
     text-align: center;
-    padding: 3%%;
+    padding: 0 46% 0 7%;
     display: block;
     color: white;
     font-size: 32px;
+    text-align: center;
+    
 }
+
+@media (max-width:844px) {
+
+  .paragraph-section h1 span {
+    top: 20px;
+    display: inline-grid;
+    -webkit-animation: bouncee 0.3s ease infinite alternate;
+    font-size: 47px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.paragraph-section p {
+  padding: 0;
+  
+}
+.paragraph-section .title {
+  margin: 17% AUTO;
+}
+}
+.button2 {
+  display: grid;
+  margin: 20% 0 0 -42%;
+}
+.button2 .glow-on-hover {
+  font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 319px;
+    height: 85px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    
+  }
+
