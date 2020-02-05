@@ -124,24 +124,5 @@
   margin: 17% AUTO;
 }
 }
-.button2 {
-  display: grid;
-  margin: 16% 0 0 -42%;
-}
-.button2 .glow-on-hover {
-  font-weight: bold;
-    text-transform: uppercase;
-    font-size: 40px;
-    width: 319px;
-    height: 85px;
-    border: none;
-    outline: none;
-    color: white;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    border-radius: 8px;
-    margin: auto;
-    box-shadow: azure (10 8 0 0);
-  }
+
 
