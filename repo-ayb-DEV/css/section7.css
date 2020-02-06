@@ -1,0 +1,145 @@
+
+.price {
+    background-color: #E0E0E0;
+    background-size: cover;
+    background-position-y: ;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;    
+}
+.price h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-size-adjust: 32px;
+    padding: 24px
+
+}
+.price hr {
+    margin-bottom: 08%;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+.snip1404 {
+    margin-top: 30%;
+    align-self: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,28%);
+    grid-column-gap: 8%;
+}
+@media only screen and (max-width: 992px) {
+    .snip1404{
+    grid-template: none;
+    width: 60%;
+    }
+   
+}
+.snip1404 .plan {
+    margin-top: 40%;
+    width: 80%;
+    overflow: hidden;
+    margin: 5% auto;
+    border: 3px solid black;
+    background-color: rgba(52, 198, 211, 0.4);
+    box-shadow: 0 0 5px rgba(255,255,255,0.4);
+    
+}
+
+.snip1404 .plan:hover {
+    background-color:rgba(52, 198, 211, 1);
+    transform:scale(1.3) ;
+    box-shadow: 0px 3px 40px 30px rgba(0, 0, 0, 0.4);
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.snip1404 header {
+    background-color: rgba(red, green, blue, alpha);
+    color: #ffffff;
+    
+    text-align: center;
+}
+.snip1404 .plan-title {
+    background-color: ;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+.snip1403 {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+
+.snip1404 .plan-title:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 300px 0 0;
+    border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+}
+
+.snip1404 .plan-cost {
+    padding: 40px 20px 10px;
+    text-align: right;
+}
+
+.snip1404 .plan-price {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+
+
+.snip1404 .plan-features {
+    padding: 0 0 20px;
+    margin: 0;
+    list-style: outside none none;
+    font-weight: bold;
+}
+
+.snip1404 .plan-features li {
+    padding: 8px 5%;
+}
+
+.snip1404 .plan-select {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.snip1404 .plan-select a {
+    background-color: rgba(29, 22, 22, 0.575);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+
+.snip1404 .plan-select a:hover {
+    background-color: #34C6D3;
+}
+.snip1404 .featured {
+    margin-top: -10px;
+    border-color: #331926;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 8px;
+}
+

@@ -1,0 +1,27 @@
+footer {
+
+    background-color: #000;
+}
+
+footer p {
+    color: cornsilk;
+}
+
+footer i {
+    color: #34C6D3;
+    font-size: 3rem;
+}
+
+footer textarea {
+    height: 16rem !important;
+}
+
+footer .btntop {
+    float: right;
+}
+
+footer .mt-2 i {
+    color: white;
+    font-size: 3rem;
+    padding: 30px;
+}
