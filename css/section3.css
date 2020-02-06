@@ -1,26 +1,26 @@
 #real {
     
-    height: 100vh;
+    height: auto;
     width: 100%;
     overflow: hidden;
-    
+    background-color: #E0E0E0;
 }
 .articles{
     
     text-align: center;
-    background: black;
-    padding: 25PX;
-  
-   
-
+}
+.articles hr {
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-bottom: 30px;
 }
 .articles-title{
     font-size: 30px;
     text-align: center;
-    color:white;
+    color:black;
+    font-weight: bold;
     display: block;
-    
-    
+    padding: 24px;   
 }
 .slideshow{
     overflow: hidden;
@@ -28,8 +28,8 @@
 
 .m {
     display: block;
-    width: 232px;
-    height: 500px;
+    width: 10%;
+    height: 100%;
     position: relative;
     float: right;
     padding: 0 30px 0 40px;
@@ -71,7 +71,7 @@
     height: 500px;
     position: absolute;
     top: 0;
-    right: 400px;
+    right: 200%;
     -webkit-perspective: 1000px;
             perspective: 1000px;
   }

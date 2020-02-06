@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(../img/section5-background.jpg);
+    background-color: #E0E0E0;
     background-size: cover;
 }
 .clients h1{

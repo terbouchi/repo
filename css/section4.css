@@ -1,31 +1,34 @@
 .equipe {
   width: 100%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: #E0E0E0;
+  background: black;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
+.equipe h1{
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 25px;
 
-.equipe h1 {
-    padding: 25px;
-    background: black;
-    width: 100%;
-    font-size: 32px;
-    color: white;
-    font-weight: blod;
-    text-align: center;
-    margin: 0;
 }
+.equipe hr {
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 25%;
 }
 .wrapper > * {
   margin: 5px;
@@ -85,16 +88,19 @@ p {
   transition: all 0.9s ease;
 }
 
-@media (max-width: 800px) {
-  body {
-    transform: scale(0.6);
+@media only screen and (max-width: 768px)  {
+  .equipe {
+    height: auto;
   }
-}
-@media (max-width: 600px) {
   .wrapper {
     display: block;
+    text-align: -webkit-center;
+    top:10%;
   }
   .wrapper > * {
-    margin: 10px;
+    margin: 20px;
+  }
+  .media {
+    width: 80%;
   }
 }

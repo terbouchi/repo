@@ -14,6 +14,7 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Robotos Condensed', sans-serif;
+
 }
 body{
   z-index: -2;
@@ -141,7 +142,7 @@ body{
                                                                                            
 @media (max-width: 620px) {
 
-  .toggle {
+.toggle {
     display: block;
 }
 .menu {
@@ -199,7 +200,7 @@ slider {
     width: 100%;
     height: 100%;
     background: #34C6D3;
-    animation: slide 12s infinite;
+    animation: slide 12s ;
     overflow: hidden;
     
    }
@@ -207,7 +208,7 @@ slider {
    slide:nth-child(1){
     left: 0%;
     animation-delay: -1s;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/4.jpg");
     background-size: cover;
     background-position: center;
    }
@@ -231,7 +232,7 @@ slider {
    slide:nth-child(4){
     left: 100%;
     animation-delay:8s;
-    background-image: url('../img/4.jpg');
+    background-image: url("../img/1.jpg");
     background-size: cover;
     background-position: center;
    }
@@ -263,12 +264,12 @@ slider {
    
    /* button */
    .glow-on-hover {
-     z-index: 3;
+    z-index: 0;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 3rem ;
+    font-size: 200% ;
     width: 40%;
-    height: 100px;
+    height: 15%;
     border: none;
     outline: none;
     color: white;
@@ -279,8 +280,7 @@ slider {
     border-radius: 10px;
     margin:auto;
     top: -40%;
-    /* left: 38%;
-    top: 7%; */
+    
 }
 
 .glow-on-hover:before {
@@ -294,7 +294,7 @@ slider {
     filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
+    animation: glowing 20s linear ;
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;

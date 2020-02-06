@@ -47,7 +47,7 @@
 }
 
 .testim .arrow {
-    display: block;
+    display: none;
     position: absolute;
     color: #eee;
     cursor: pointer;
